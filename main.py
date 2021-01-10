@@ -18,6 +18,8 @@ class MyClient(discord.Client):
             await message.channel.send('Hello!')
         if message.content.lower() == 'josh is baf':
             await message.channel.send('I agree')
+        if message.content.lower() == 'shim is baf':
+            await message.channel.send('I agree')
 
 
 client = MyClient()
