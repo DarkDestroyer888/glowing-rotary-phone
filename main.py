@@ -13,7 +13,9 @@ class MyClient(discord.Client):
         # we do not want the bot to reply to itself
         if message.author.id == self.user.id:
             return
-
+        if message.content.startswith('!lmao'):
+            await message.channel.send('What do you mean?')
+            
         if message.content.startswith('!hello'):
             await message.channel.send('Hello!')
         if message.content.lower() == 'josh is baf':
